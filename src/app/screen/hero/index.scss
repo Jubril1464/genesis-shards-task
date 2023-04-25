@@ -1,0 +1,111 @@
+@import '/src/index.scss';
+.hero {
+   @include respond(tab-port) {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+   }
+    &-text {
+        font-family:$font-family !important;
+    }
+    &-heading {
+        font-family:$font-family !important;
+        font-weight: 500 !important;
+        @include respond(phone) {
+            font-size: 5rem !important;
+        }
+
+    }
+    &-img {
+        margin-top: -5rem;
+
+        @media(max-width:1200px) {
+            height: 50rem !important;
+            width: 50rem !important;
+        }
+        @include respond(tab-port) {
+            display: none;
+        }
+        img {
+            transform: scale(1.3);
+            @media(max-width:1280px) {
+                transform: scale(1.1);
+                margin-right: 3rem;
+
+                
+            }
+        }
+    }
+    &-arb {
+        @media(max-width: 430px) {
+            width: 15rem;
+        }
+        @media(max-width: 350px) {
+            width: 10rem;
+           }
+    }
+    .color-text {
+        background: linear-gradient(90.03deg, #DB0968 -5.59%, #FEC201 65.86%);
+        background-clip: text;
+       -webkit-background-clip: text;
+       color: transparent !important;
+       letter-spacing: 1rem;
+       @include respond(phone) {
+        letter-spacing: .5rem;
+       }
+    }
+    .btn-launch {
+      border-color: (#fec30189) !important;
+       border-radius: 10px !important;
+       width: 20rem;
+       height: 4rem;
+      font-family: 'Space Grotesk' !important;
+       font-style: normal;
+       font-weight: 300 !important;
+       font-size: 1.2rem !important;
+       text-transform: capitalize !important;
+       color: #fff;
+       background-color:  rgba(68, 68, 68, 0.25) !important;
+}
+
+&__card {
+    background:rgba(68, 68, 68, 0.25) !important;
+    border: 1px solid #2F2F2F !important;
+    padding: 1rem;
+    @media(max-width: 800px){
+   width: 45rem !important;
+    }
+    @include respond(phone) {
+        width: 40rem !important;
+    }
+    @media(max-width:400px) {
+        width: 25rem !important;
+    }
+    &-container {
+        @include respond(phone) {
+            flex-direction: column !important;
+        }
+    }
+
+    &-no {
+        font-weight: 500 !important;
+        font-family: $font-family !important;
+        background: linear-gradient(90.03deg, #DB0968 -5.59%, #FEC201 65.86%);
+        background-clip: text;
+       -webkit-background-clip: text;
+       color: transparent;
+       @media(max-width:1200px) {
+        font-size: 4rem !important;
+    }
+    }
+    &-icon {
+        z-index: 5;
+        margin-top: -5rem;
+      
+    }
+    &-text {
+        font-size: 2rem !important;
+        font-family: $font-family;
+       
+    }
+}
+    }

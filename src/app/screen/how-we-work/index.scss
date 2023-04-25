@@ -1,0 +1,55 @@
+@import '/src/index.scss';
+.work {
+    background: url(../../../assets/img/bgColor.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    @include respond(tab-port) {
+        padding-right: 5rem !important;
+        padding-left: 5rem !important;
+    }
+    &-heading {
+      font-family: $font-family !important;
+      color: #fff;
+      font-weight: 500 !important;
+    }
+    &-card {
+
+        &-title {
+            color: #fff;
+            font-family: $font-family !important;
+            font-weight: 500 !important;
+
+        }
+        &-text {
+            color: #fff;
+            font-family: $font-family !important;
+
+        }
+        &-btn {
+            border-color: #DB0968 !important;
+            color: #fff !important;
+            height: 4rem !important;
+            background-color: rgba(68, 68, 68, 0.25) !important;
+            border-radius: 12px !important;
+            width: 10.6rem;
+        }
+        &-container {
+            @include respond(tab-port) {
+                flex-direction: column !important;
+            }
+
+        }
+    }
+   
+    &-card-no {
+        color: #fff;
+        font-weight: 700 !important;
+        font-size: 10rem !important;
+        background: linear-gradient(90.03deg, #DB0968 -5.59%, #FEC201 65.86%);
+        background-clip: text;
+       -webkit-background-clip: text;
+        color: transparent;
+
+    }
+    
+}
