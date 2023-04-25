@@ -8,6 +8,9 @@
         padding-right: 5rem !important;
         padding-left: 5rem !important;
     }
+    @media(max-width:350px){
+        width: 126% !important;
+    }
 
     &-title {
    font-family: $font-family !important;

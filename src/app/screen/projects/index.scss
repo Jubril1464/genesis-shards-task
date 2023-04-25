@@ -3,6 +3,19 @@
     background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.8)), url(../../../assets/img/bgColor.png);
     background-position: top;
     background-repeat: no-repeat;
+    // width: 100vw !important;
+    @media(max-width:700px) {
+        flex-direction: column !important;
+        margin-top: 4rem !important;
+    }
+    @media(max-width:350px){
+        width: 126% !important;
+    }
+    @include respond(tab-port) {
+        padding-right: 5rem !important;
+        padding-left: 5rem !important;
+        
+    }
     
 
     &-text {
@@ -30,5 +43,13 @@
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(3,auto);
         grid-gap: 2rem;
+
+       &-item{ 
+        
+        @media(max-width: 360px){
+            width: 15rem !important;
+        }
+
+    }
     }
 }

@@ -17,7 +17,7 @@ import Arb from "../../../assets/img/arbitrum.png";
 import "./index.scss";
 const Project: React.FC = () => {
   return (
-    <FlexRow className="project" leftPadding="10" rightPadding="10">
+    <FlexRow className="project" leftPadding="10" rightPadding="10" gap="2">
       <FlexColumn gap="1" alignItems="flex-start">
         <SlRocket color="#FFB800" size={30} />
         <Typography
@@ -44,7 +44,7 @@ const Project: React.FC = () => {
           Find out how to launch with us
         </Button>
       </FlexColumn>
-      <FlexColumn gap="2">
+      <FlexColumn gap="2" alignItems="flex-start">
         <HiOutlineLink size={40} color="#76D6FF" />
         <Typography
           color="#fff"
@@ -65,6 +65,7 @@ const Project: React.FC = () => {
             leftPadding="1.2"
             topPadding="1.2"
             bottomPadding="1.2"
+            className="grid-item"
           >
             <img src={Eth} alt="" width="100%" height="100%" />
           </CustomContainer>
@@ -79,8 +80,9 @@ const Project: React.FC = () => {
             leftPadding="1.2"
             topPadding="1.2"
             bottomPadding="1.2"
+            className="grid-item"
           >
-            <img src={Eth} alt="" width="100%" height="100%" />
+            <img src={Binance} alt="" width="100%" height="100%" />
           </CustomContainer>
           <CustomContainer
             width="18"
@@ -92,8 +94,46 @@ const Project: React.FC = () => {
             leftPadding="1.2"
             topPadding="1.2"
             bottomPadding="1.2"
+            className="grid-item"
           >
-            <img src={Eth} alt="" width="100%" height="100%" />
+            <img src={Polygon} alt="" width="100%" height="100%" />
+          </CustomContainer>
+          <FlexRow
+            width="18"
+            height="5"
+            radius="2.5"
+            borderColor="#2F2F2F"
+            bgColor="rgba(68, 68, 68, 0.25);"
+            rightPadding="1.2"
+            leftPadding="1.2"
+            topPadding="1.2"
+            bottomPadding="1.2"
+            gap=".6"
+            className="grid-item"
+          >
+            <img src={Avan} alt="" width="30px" height="30px" />
+            <Typography
+          color="#fff"
+          variant="h5" 
+          letterSpacing='2px'
+        >
+          Avalanche
+        </Typography>
+
+          </FlexRow>
+          <CustomContainer
+            width="18"
+            height="5"
+            radius="2.5"
+            borderColor="#2F2F2F"
+            bgColor="rgba(68, 68, 68, 0.25);"
+            rightPadding="1.2"
+            leftPadding="1.2"
+            topPadding="1.2"
+            bottomPadding="1.2"
+            className="grid-item"
+          >
+            <img src={Harmony} alt="" width="100%" height="100%" />
           </CustomContainer>
           <CustomContainer
             width="18"
@@ -105,36 +145,12 @@ const Project: React.FC = () => {
             leftPadding="1.2"
             topPadding="1.2"
             bottomPadding="1.2"
+            className="grid-item"
           >
-            <img src={Eth} alt="" width="100%" height="100%" />
-          </CustomContainer>
-          <CustomContainer
-            width="18"
-            height="5"
-            radius="2.5"
-            borderColor="#2F2F2F"
-            bgColor="rgba(68, 68, 68, 0.25);"
-            rightPadding="1.2"
-            leftPadding="1.2"
-            topPadding="1.2"
-            bottomPadding="1.2"
-          >
-            <img src={Eth} alt="" width="100%" height="100%" />
-          </CustomContainer>
-          <CustomContainer
-            width="18"
-            height="5"
-            radius="2.5"
-            borderColor="#2F2F2F"
-            bgColor="rgba(68, 68, 68, 0.25);"
-            rightPadding="1.2"
-            leftPadding="1.2"
-            topPadding="1.2"
-            bottomPadding="1.2"
-          >
-            <img src={Eth} alt="" width="100%" height="100%" />
+            <img src={Arb} alt="" width="100%" height="100%" />
           </CustomContainer>
         </div>
+        <Typography variant="body2" color='#fff'>...and we’re always working on adding more!</Typography>
       </FlexColumn>
     </FlexRow>
   );
