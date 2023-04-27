@@ -8,7 +8,7 @@ import Senital from '../../../assets/img/senital.png';
 const Powered = () => {
   return (
     <div className="powered">
-      <FlexRow gap="2" justifyContent="space-between" height="70" alignItems="flex-start" className="powered-container">
+      <FlexRow gap="2" justifyContent="space-between"  height="70" alignItems="flex-start" className="powered-container" >
         <div className="wrapper-container">
           <div className="wrapper-1">
             <img src={Layer2} alt="" width="100%" height="100%" />

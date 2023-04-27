@@ -5,6 +5,8 @@ import Hero from "../hero";
 import Work from "../how-we-work";
 import Powered from "../powered";
 import Project from "../projects";
+import Performance from "../performance";
+import World from "../world";
 
 
 const Home = () => {
@@ -15,6 +17,8 @@ const Home = () => {
      <Work />
      <Powered />
      <Project />
+     <Performance />
+     <World />
     </>
   );
 };

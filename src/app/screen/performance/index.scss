@@ -1,0 +1,40 @@
+@import '/src/index.scss';
+.performance {
+    background:linear-gradient(to bottom,rgba(0,0,0,.6), rgba(0,0,0,.9)), url(../../../assets/img/bg-2.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    @include respond(tab-port) {
+        padding-right: 5rem !important;
+        padding-left: 5rem !important;
+    }
+    @media(max-width:350px){
+        width: 126% !important;
+    }
+   
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,28rem);
+    grid-template-rows: repeat(2,35rem);
+    grid-gap: 5rem;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+   
+    @media(max-width:1000px) {
+        grid-template-columns: repeat(2,28rem);
+        grid-template-rows: repeat(3,35rem);
+        grid-auto-rows: 35rem;
+
+
+
+    }
+    @media(max-width:560px) {
+        grid-template-columns: repeat(1,28rem);
+        grid-template-rows: repeat(6,35rem);
+        grid-auto-rows: 35rem;
+
+
+    }
+  
+}

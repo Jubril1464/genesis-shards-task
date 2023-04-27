@@ -17,8 +17,8 @@ import Arb from "../../../assets/img/arbitrum.png";
 import "./index.scss";
 const Project: React.FC = () => {
   return (
-    <FlexRow className="project" leftPadding="10" rightPadding="10" gap="2">
-      <FlexColumn gap="1" alignItems="flex-start">
+    <FlexRow className="project" leftPadding="10" rightPadding="10" gap="2" justifyContent="center">
+      <FlexColumn gap="1" alignItems="flex-start" >
         <SlRocket color="#FFB800" size={30} />
         <Typography
           color="#fff"
@@ -44,14 +44,14 @@ const Project: React.FC = () => {
           Find out how to launch with us
         </Button>
       </FlexColumn>
-      <FlexColumn gap="2" alignItems="flex-start">
+      <FlexColumn gap="2" >
         <HiOutlineLink size={40} color="#76D6FF" />
         <Typography
           color="#fff"
           variant="h2"
           fontWeight="500"
           className="project-text"
-        >
+        > 
           Chains we work with
         </Typography>
         <div className="grid">
