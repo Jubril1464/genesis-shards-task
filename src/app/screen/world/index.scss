@@ -1,9 +1,9 @@
 @import '/src/index.scss';
 .world {
-    @include respond(tab-port) {
-        padding-right: 5rem !important;
-        padding-left: 5rem !important;
-       }
+    background: url(../../../assets/img/bg-3.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    
     @media(max-width:350px){
         width: 126% !important;
     }
@@ -28,6 +28,13 @@
             border-color: #DB0968;
 
         }
+    }
+    &-heading {
+        font-weight: 500 !important;
+    }
+    .btn-moon {
+        background: linear-gradient(to right, #DB0968, #FEC201);
+        border-radius: 9px;
     }
 }
 .img-wrapper {
@@ -71,3 +78,59 @@
         }
     }
 }
+
+.swiper {
+    width: 100%;
+    height: 40rem;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-next {
+    right: 50% !important;
+    bottom: 0 !important;
+    color: #fff !important;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 3rem !important;
+    width: 3rem !important;
+    @media(max-width: 700px) {
+        right: 35% !important;
+    }
+    &::after{
+        font-size: 1.2rem !important;
+       }
+   
+  }
+  .swiper-button-prev {
+    left: 40% !important;
+    width: .2rem !important;
+    color: #fff !important;
+    border: 1px solid #fff;
+
+    border-radius: 50%;
+    height: 3rem !important;
+    width: 3rem !important;
+    @media(max-width: 700px) {
+        left: 35% !important;
+    }
+
+    &::after{
+        font-size: 1.2rem !important;
+       }
+  }

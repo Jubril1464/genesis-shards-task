@@ -43,3 +43,27 @@ export const performance = [
 
 
 ]
+
+export const partner = [
+    {
+        text: 'Delivery Partner',
+        img: WorldCyptoids
+    },
+    {
+        text: 'Finance Partner',
+        img: WorldCyptoids
+    },
+    {
+        text: 'Partner Partner',
+        img: WorldCyptoids
+    },
+    {
+        text: 'Privacy Partner',
+        img: WorldCyptoids
+    },
+    {
+        text: 'Hospitality Partner',
+        img: WorldCyptoids
+    },
+    
+]
