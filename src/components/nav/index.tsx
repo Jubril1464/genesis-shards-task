@@ -25,9 +25,8 @@ const Nav: React.FC = () => {
         Symbiote
       </Typography>
 
-      <ul className={`nav-item-container ${checked && 'active'}`}>
+      <ul className={`nav-item-container ${checked && "active"}`}>
         <li>
-        
           <Typography
             variant="h5"
             color="#fff"
@@ -39,52 +38,48 @@ const Nav: React.FC = () => {
         </li>
 
         <li>
-        
-        <Typography
-          variant="h5"
-          color="#fff"
-          fontSize={20}
-          className="nav-items"
-        >
-          Vote DAO
-        </Typography>
-      </li>
+          <Typography
+            variant="h5"
+            color="#fff"
+            fontSize={20}
+            className="nav-items"
+          >
+            Vote DAO
+          </Typography>
+        </li>
 
-      <li>
-        
-        <Typography
-          variant="h5"
-          color="#fff"
-          fontSize={20}
-          className="nav-items"
-        >
-          Stake
-        </Typography>
-      </li>
+        <li>
+          <Typography
+            variant="h5"
+            color="#fff"
+            fontSize={20}
+            className="nav-items"
+          >
+            Stake
+          </Typography>
+        </li>
 
-      <li>
-        
-        <Typography
-          variant="h5"
-          color="#fff"
-          fontSize={20}
-          className="nav-items"
-        >
-          Ecosystem
-        </Typography>
-      </li>
+        <li>
+          <Typography
+            variant="h5"
+            color="#fff"
+            fontSize={20}
+            className="nav-items"
+          >
+            Ecosystem
+          </Typography>
+        </li>
 
-      <li>
-        
-        <Typography
-          variant="h5"
-          color="#fff"
-          fontSize={20}
-          className="nav-items"
-        >
-          Profile
-        </Typography>
-      </li>
+        <li>
+          <Typography
+            variant="h5"
+            color="#fff"
+            fontSize={20}
+            className="nav-items"
+          >
+            Profile
+          </Typography>
+        </li>
 
         <div className="nav-icon-container">
           <FlexRow

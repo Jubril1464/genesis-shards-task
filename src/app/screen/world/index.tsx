@@ -24,15 +24,18 @@ const World: React.FC = () => {
 
   return (
     <CustomContainer topMargin="3" className="world" bottomPadding="5">
-      <Typography
+        <CustomContainer rightPadding="2" leftPadding="2">
+        <Typography
         variant="h2"
-        color="#fff"
+        color="#fff" 
         fontFamily="Space Grotesk"
         align="center"
         className="world-heading"
       >
         Your project belongs to the world.
       </Typography>
+        </CustomContainer>
+      
       <Typography
         variant="body2"
         color="#fff"
@@ -242,23 +245,32 @@ const World: React.FC = () => {
           </Button>
         </FlexRow>
       </CustomContainer>
-      <FlexRow  gap="3" topMargin="3" leftPadding="2" rightPadding="2" >
+      <FlexRow gap="3" topMargin="3" leftPadding="2" rightPadding="2">
         <CustomContainer width="25">
-        <Typography
+          <Typography
             variant="h2"
             color="#fff"
             fontFamily="Space Grotesk"
             align="center"
             gutterBottom
             letterSpacing="1"
-            width='60px'
+            width="60px"
           >
-           We’re better. Together.
+            We’re better. Together.
           </Typography>
         </CustomContainer>
-      
-          <CustomContainer width=".1" height="15" bgColor="#fff"></CustomContainer>
-          <FlexColumn width="30" style={{justifySelf:"left"}} alignItems="flex-start" gap="2">
+
+        <CustomContainer
+          width=".1"
+          height="15"
+          bgColor="#fff"
+        ></CustomContainer>
+        <FlexColumn
+          width="30"
+          style={{ justifySelf: "left" }}
+          alignItems="flex-start"
+          gap="2"
+        >
           <Typography
             variant="body2"
             color="#fff"
@@ -267,7 +279,7 @@ const World: React.FC = () => {
             gutterBottom
             letterSpacing="1"
           >
-           Contact Us
+            Contact Us
           </Typography>
           <Typography
             variant="body2"
@@ -277,10 +289,14 @@ const World: React.FC = () => {
             gutterBottom
             letterSpacing="1"
           >
-          Our expert Crypto team is always available except on full moons where we moonlight as Werewolves hunting down vampires from Twilight. Want to launch with us? Just want to say Hi? Grab a chai?
+            Our expert Crypto team is always available except on full moons
+            where we moonlight as Werewolves hunting down vampires from
+            Twilight. Want to launch with us? Just want to say Hi? Grab a chai?
           </Typography>
-          <Button variant="contained" className="btn-moon btn">To the Moon!</Button>
-          </FlexColumn>
+          <Button variant="contained" className="btn-moon btn">
+            To the Moon!
+          </Button>
+        </FlexColumn>
       </FlexRow>
     </CustomContainer>
   );

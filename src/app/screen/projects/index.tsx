@@ -17,8 +17,14 @@ import Arb from "../../../assets/img/arbitrum.png";
 import "./index.scss";
 const Project: React.FC = () => {
   return (
-    <FlexRow className="project" leftPadding="10" rightPadding="10" gap="2" justifyContent="center">
-      <FlexColumn gap="1" alignItems="flex-start" >
+    <FlexRow
+      className="project"
+      leftPadding="10"
+      rightPadding="10"
+      gap="2"
+      justifyContent="center"
+    >
+      <FlexColumn gap="1" alignItems="flex-start">
         <SlRocket color="#FFB800" size={30} />
         <Typography
           color="#fff"
@@ -44,14 +50,14 @@ const Project: React.FC = () => {
           Find out how to launch with us
         </Button>
       </FlexColumn>
-      <FlexColumn gap="2" >
+      <FlexColumn gap="2">
         <HiOutlineLink size={40} color="#76D6FF" />
         <Typography
           color="#fff"
           variant="h2"
           fontWeight="500"
           className="project-text"
-        > 
+        >
           Chains we work with
         </Typography>
         <div className="grid">
@@ -112,14 +118,9 @@ const Project: React.FC = () => {
             className="grid-item"
           >
             <img src={Avan} alt="" width="30px" height="30px" />
-            <Typography
-          color="#fff"
-          variant="h5" 
-          letterSpacing='2px'
-        >
-          Avalanche
-        </Typography>
-
+            <Typography color="#fff" variant="h5" letterSpacing="2px">
+              Avalanche
+            </Typography>
           </FlexRow>
           <CustomContainer
             width="18"
@@ -150,7 +151,9 @@ const Project: React.FC = () => {
             <img src={Arb} alt="" width="100%" height="100%" />
           </CustomContainer>
         </div>
-        <Typography variant="body2" color='#fff'>...and we’re always working on adding more!</Typography>
+        <Typography variant="body2" color="#fff">
+          ...and we’re always working on adding more!
+        </Typography>
       </FlexColumn>
     </FlexRow>
   );

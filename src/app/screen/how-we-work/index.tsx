@@ -87,7 +87,6 @@ const Work: React.FC = () => {
                 Vote
               </Typography>
               <Typography variant="h6" className="work-card-text" align="left">
-             
                 Vote for a single project among a cohort of projects
               </Typography>
             </div>

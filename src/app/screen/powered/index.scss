@@ -1,81 +1,76 @@
-@import '/src/index.scss';
+@import "/src/index.scss";
 .powered {
-    margin-top: 15rem;
-    position: relative;
-    padding-right: 10rem;
-    padding-left: 10rem;
-    @include respond(tab-port) {
-        padding-right: 5rem !important;
-        padding-left: 5rem !important;
-    }
-    @media(max-width:350px){
-        width: 126% !important;
-    }
+  margin-top: 15rem;
+  position: relative;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  @include respond(tab-port) {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+  }
+  @media (max-width: 350px) {
+    width: 126% !important;
+  }
 
-    &-title {
-   font-family: $font-family !important;
+  &-title {
+    font-family: $font-family !important;
+  }
+  &-container {
+    @media (max-width: 730px) {
+      flex-direction: column !important;
+      align-items: center !important;
+      height: 75rem !important;
     }
-    &-container {
-        @media(max-width: 730px) {
-            flex-direction: column !important;
-            align-items: center !important;
-            height: 75rem !important;
-        }
+  }
+  &-text-container {
+    @media (max-width: 730px) {
+      width: 100% !important;
     }
-    &-text-container {
-        @media(max-width: 730px) {
-            width: 100% !important;
-        }
-    }
+  }
 }
 .wrapper-container {
-    width: auto;
-    @media(max-width: 730px) {
-        width: 100%;
-    }
-
-   
+  width: auto;
+  @media (max-width: 730px) {
+    width: 100%;
+  }
 }
-.wrapper-1,.wrapper-2 {
-   position: absolute;
-
+.wrapper-1,
+.wrapper-2 {
+  position: absolute;
 }
 .wrapper-1 {
-    z-index: 2;
-    margin-left: 18rem;
-    height: 40rem;
-    width: 48rem;
-    @include respond(tab-land) {
-        height: 27rem;
-        width: 27rem;
-    }
-    @media(max-width:440px) {
-        height: 20rem;
-        width: 20rem;
-        margin-left: 10rem;
-
-    }
-    @media(max-width:320px) {
-        height: 15rem;
-        width: 15rem;
-    }
-    
+  z-index: 2;
+  margin-left: 18rem;
+  height: 40rem;
+  width: 48rem;
+  @include respond(tab-land) {
+    height: 27rem;
+    width: 27rem;
+  }
+  @media (max-width: 440px) {
+    height: 20rem;
+    width: 20rem;
+    margin-left: 10rem;
+  }
+  @media (max-width: 320px) {
+    height: 15rem;
+    width: 15rem;
+  }
 }
 .wrapper-2 {
-    width: 65rem;
-    height: 39rem;
-    top: 9rem;
-    @include respond(tab-land) {
-        height: 30rem;
-        width: 43rem;
-    }
-    @media(max-width:440px) {
-        height: 20rem;
-        width: 30rem;
-}
-@media(max-width:320px) {
+  width: 65rem;
+  height: 39rem;
+  top: 9rem;
+  @include respond(tab-land) {
+    height: 30rem;
+    width: 43rem;
+  }
+  @media (max-width: 440px) {
+    height: 20rem;
+    width: 30rem;
+  }
+  @media (max-width: 320px) {
     height: 15rem;
     width: 20rem;
-}
-    
+  }
 }

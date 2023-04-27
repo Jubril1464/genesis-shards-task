@@ -1,55 +1,48 @@
-@import '/src/index.scss';
+@import "/src/index.scss";
 .project {
-    background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.8)), url(../../../assets/img/bgColor.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    // width: 100vw !important;
-    @media(max-width:700px) {
-        flex-direction: column !important;
-        margin-top: 4rem !important;
-    }
-    @media(max-width:350px){
-        width: 126% !important;
-    }
-    @include respond(tab-port) {
-        padding-right: 5rem !important;
-        padding-left: 5rem !important;
-        
-    }
-    
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(../../../assets/img/bgColor.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  // width: 100vw !important;
+  @media (max-width: 700px) {
+    flex-direction: column !important;
+    margin-top: 4rem !important;
+  }
+  @media (max-width: 350px) {
+    width: 126% !important;
+  }
+  @include respond(tab-port) {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+  }
 
-    &-text {
-        font-family: $font-family !important;
-        font-weight: 500 !important;
-    }
+  &-text {
+    font-family: $font-family !important;
+    font-weight: 500 !important;
+  }
 
-    .btn-find {
-        background-color: rgba(68, 68, 68, 0.25) !important;
-        border-radius: 1em !important;
-        color: #fff;
-        border-color: #DB0968;
-        text-transform: capitalize !important;
-
-        
-    }
-    .image-wrapper {
-     margin-top: -9rem;
+  .btn-find {
+    background-color: rgba(68, 68, 68, 0.25) !important;
+    border-radius: 1em !important;
+    color: #fff;
+    border-color: #db0968;
+    text-transform: capitalize !important;
+  }
+  .image-wrapper {
+    margin-top: -9rem;
     transform: skew(-30deg) translateY(-2rem);
-   
-        
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3,auto);
-        grid-gap: 2rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 2rem;
 
-       &-item{ 
-        
-        @media(max-width: 360px){
-            width: 15rem !important;
-        }
-
+    &-item {
+      @media (max-width: 360px) {
+        width: 15rem !important;
+      }
     }
-    }
+  }
 }

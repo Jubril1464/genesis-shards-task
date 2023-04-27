@@ -16,7 +16,6 @@ const Footer: React.FC = () => {
         bottomPadding="2"
         alignItems="flex-start"
         className="footer-container"
-        
       >
         <FlexColumn width="40" className="text-container">
           <Typography
@@ -209,7 +208,7 @@ const Footer: React.FC = () => {
               className="footer-link"
               fontWeight="300"
             >
-             Discord
+              Discord
             </AppLink>
             <AppLink
               color="#fff"
@@ -229,7 +228,7 @@ const Footer: React.FC = () => {
               className="footer-link"
               fontWeight="300"
             >
-             Linktree
+              Linktree
             </AppLink>
           </FlexColumn>
         </FlexRow>
