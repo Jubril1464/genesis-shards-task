@@ -3,14 +3,14 @@ import { CustomContainer, FlexColumn, FlexRow, ImageWrapper } from "../../app-st
 import "./index.scss";
 import Arbitrum from "../../../assets/img/arbitrum.png";
 import { MdLaunch } from "react-icons/md";
-import BgColor from "../../../assets/img/bgColor.png";
+import BgColor from "../../../assets/img/bg-4.png";
 import Rectangle from "../../../assets/img/rectangle.png";
 import {SlRocket} from 'react-icons/sl'
 import {GiEnlightenment,GiLightningSpanner,GiCandleLight} from 'react-icons/gi'
 const Hero: React.FC = () => {
   return (
     <CustomContainer
-      topMargin="8"
+      topMargin="13"
       leftPadding="10"
       className="hero"
       rightPadding="10"
@@ -43,8 +43,10 @@ const Hero: React.FC = () => {
           </Button>
         </Stack>
         
-          <ImageWrapper height="70" width="70" className="hero-img">
+          <ImageWrapper height="50" width="70" className="hero-img">
             <img src={BgColor} alt="" height="100%" width="100%" />
+
+           
           </ImageWrapper>
     
       </FlexRow>

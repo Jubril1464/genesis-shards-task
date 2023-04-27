@@ -1,0 +1,22 @@
+@import '/src/index.scss';
+.footer {
+    @media(max-width:350px){
+        width: 126% !important;
+    }
+
+    &-link{
+        font-family:$font-family;
+        
+    }
+ &-container{
+    @include respond(tab-port) {
+        flex-direction: column !important;
+     }
+ }   
+.text-container {
+    @include respond(tab-port) {
+        width: 100% !important;
+     }
+}
+    
+}

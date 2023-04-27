@@ -177,7 +177,7 @@ const World: React.FC = () => {
           A thriving partner ecosystem
         </Typography>
         <Typography
-          variant="body2"
+          variant="h6"
           color="#fff"
           fontFamily="Space Grotesk"
           align="center"

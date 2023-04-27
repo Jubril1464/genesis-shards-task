@@ -7,6 +7,7 @@ import Powered from "../powered";
 import Project from "../projects";
 import Performance from "../performance";
 import World from "../world";
+import Footer from "../../../components/footer";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
      <Project />
      <Performance />
      <World />
+     <Footer />
     </>
   );
 };

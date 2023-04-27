@@ -14,9 +14,12 @@ const Nav: React.FC = () => {
       leftPadding="3"
       rightPadding="3"
       topPadding="3"
+      bottomPadding="2"
       gap="5"
       justifyContent="space-between"
       className="nav-container"
+      bottomMargin="2"
+      bgColor="#000"
     >
       <Typography variant="h2" color="#fff" className="logo-title">
         Symbiote
