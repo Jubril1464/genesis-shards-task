@@ -1,7 +1,7 @@
 import Layer from "../../../assets/img/layer.png";
 import Layer2 from "../../../assets/img/layer-2.png";
 import Lock from "../../../assets/img/lock.png";
-import { Container, FlexColumn, FlexRow, ImageWrapper } from "../../app-styles";
+import { FlexColumn, FlexRow, ImageWrapper } from "../../app-styles";
 import "./index.scss";
 import { Typography } from "@mui/material";
 import Senital from "../../../assets/img/senital.png";

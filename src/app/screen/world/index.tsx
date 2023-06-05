@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
 import { Button, Typography } from "@mui/material";
 import {
-  AppSpan,
   CustomContainer,
   FlexColumn,
   FlexRow,
@@ -10,7 +8,6 @@ import {
 import Crystal from "../../../assets/img/cyrstal.png";
 import Earth from "../../../assets/img/world.png";
 import "./index.scss";
-import WorldCryptoids from "../../../assets/img/world-cryptoids.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -20,7 +17,6 @@ import { Navigation } from "swiper";
 import { partner } from "../../../utils/mock-data";
 
 const World: React.FC = () => {
-  const [cardPerView, setCardPerView] = useState<number>(3);
 
   return (
     <CustomContainer topMargin="3" className="world" bottomPadding="5">
@@ -194,7 +190,7 @@ const World: React.FC = () => {
             navigation={true}
             modules={[Navigation]}
             className="mySwiper"
-            slidesPerView={cardPerView}
+            slidesPerView={3}
             spaceBetween={1}
           >
             {partner.map((item: any, index: number) => (

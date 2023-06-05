@@ -1,2 +1,3 @@
 import screen from "./screen/home";
-export default [screen];
+const screens =[screen]
+export default screens;

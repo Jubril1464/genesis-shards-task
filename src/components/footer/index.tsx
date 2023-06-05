@@ -1,4 +1,4 @@
-import { AppLink, CustomContainer, FlexColumn, FlexRow } from "../../style";
+import { AppLink, FlexColumn, FlexRow } from "../../style";
 import { Typography } from "@mui/material";
 import "./index.scss";
 

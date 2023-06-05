@@ -4,7 +4,7 @@ import {
   FlexRow,
   ImageWrapper,
 } from "../../app-styles";
-import { Typography, Button, Stack, Card } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 import One from "../../../assets/img/1.png";
 import Two from "../../../assets/img/2.png";
 import Three from "../../../assets/img/3.png";

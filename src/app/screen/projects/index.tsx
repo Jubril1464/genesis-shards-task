@@ -6,7 +6,7 @@ import {
 } from "../../app-styles";
 import { SlRocket } from "react-icons/sl";
 import Fifty from "../../../assets/img/50.png";
-import { Button, Grid, Stack, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { HiOutlineLink } from "react-icons/hi";
 import Polygon from "../../../assets/img/polygon.png";
 import Binance from "../../../assets/img/binance.png";
